@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="276" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jLabel1" max="32767" attributes="0"/>
+                  <Component id="addClientBtm" max="32767" attributes="0"/>
+                  <Component id="addEmployedBtm" alignment="0" max="32767" attributes="0"/>
+                  <Component id="addSegmentBtm" alignment="0" max="32767" attributes="0"/>
+                  <Component id="addPromoBtm" alignment="0" max="32767" attributes="0"/>
+                  <Component id="addProductBtm" alignment="0" max="32767" attributes="0"/>
+                  <Component id="moreOptionsBtm" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="268" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="45" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <Component id="addClientBtm" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="addEmployedBtm" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="addSegmentBtm" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="addPromoBtm" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="addProductBtm" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="moreOptionsBtm" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="103" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Administrador de BDD Bancaria"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="addClientBtm">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Agregar Cliente"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addClientBtmMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="addEmployedBtm">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Agregar Empleado"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addEmployedBtmMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="addSegmentBtm">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Crear Segmento"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addSegmentBtmMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="addPromoBtm">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Agregar Promocion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addPromoBtmMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="addProductBtm">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Crear Producto"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addProductBtmMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="moreOptionsBtm">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Otras Acciones"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="moreOptionsBtmMouseClicked"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
