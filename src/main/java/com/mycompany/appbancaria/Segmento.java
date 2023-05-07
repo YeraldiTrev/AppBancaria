@@ -6,21 +6,20 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 
-public class Empleado {
+public class Segmento {
      String url = "jdbc:postgresql://localhost:5432/AppBancaria";
      String user = "postgres";
      String password = "root";
      
-     private String numEmpleado;
+     private int noSegmento;
      private String nombre;
-     private String apellidos;
-     private String puesto;
-     private float sueldo;
-     public String getNumEmpleado() {
-          return numEmpleado;
+     private String nivel;
+
+     public int getNoSegmento() {
+          return noSegmento;
      }
-     public void setNumEmpleado(String numEmpleado) {
-          this.numEmpleado = numEmpleado;
+     public void setNoSegmento(int noSegmento) {
+          this.noSegmento = noSegmento;
      }
      public String getNombre() {
           return nombre;
@@ -28,31 +27,19 @@ public class Empleado {
      public void setNombre(String nombre) {
           this.nombre = nombre;
      }
-     public String getApellidos() {
-          return apellidos;
+     public String getNivel() {
+          return nivel;
      }
-     public void setApellidos(String apellidos) {
-          this.apellidos = apellidos;
+     public void setNivel(String nivel) {
+          this.nivel = nivel;
      }
-     public String getPuesto() {
-          return puesto;
-     }
-     public void setPuesto(String puesto) {
-          this.puesto = puesto;
-     }
-     public float getSueldo() {
-          return sueldo;
-     }
-     public void setSueldo(float sueldo) {
-          this.sueldo = sueldo;
-     }
-     
-     public ResultSet viewEmployed() {
+
+     public ResultSet viewSegment() {
           ResultSet rs = null;
           try{
                Connection conn= DriverManager.getConnection(url, user, password);
                PreparedStatement select = conn.prepareStatement("SELECT *"
-                       + "FROM empleados");
+                       + "FROM segmentos");
                rs = select.executeQuery();
           }catch( Exception e){
                JOptionPane.showMessageDialog(null,"Error: "+ e);

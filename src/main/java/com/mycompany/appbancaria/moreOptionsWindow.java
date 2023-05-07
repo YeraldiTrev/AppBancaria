@@ -26,6 +26,11 @@ public class moreOptionsWindow extends javax.swing.JFrame {
 
           mainWindowBackBtm = new javax.swing.JButton();
           jLabel1 = new javax.swing.JLabel();
+          btmClients = new javax.swing.JButton();
+          btmEmployed = new javax.swing.JButton();
+          btmSegment = new javax.swing.JButton();
+          btmPromo = new javax.swing.JButton();
+          btmProducto = new javax.swing.JButton();
 
           setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,28 +42,79 @@ public class moreOptionsWindow extends javax.swing.JFrame {
           });
 
           jLabel1.setText("Visualizacion De Datos");
+          jLabel1.setToolTipText("");
+
+          btmClients.setText("Clientes");
+          btmClients.addMouseListener(new java.awt.event.MouseAdapter() {
+               public void mouseClicked(java.awt.event.MouseEvent evt) {
+                    btmClientsMouseClicked(evt);
+               }
+          });
+
+          btmEmployed.setText("Empleados");
+          btmEmployed.addMouseListener(new java.awt.event.MouseAdapter() {
+               public void mouseClicked(java.awt.event.MouseEvent evt) {
+                    btmEmployedMouseClicked(evt);
+               }
+          });
+
+          btmSegment.setText("Segmentos");
+          btmSegment.addMouseListener(new java.awt.event.MouseAdapter() {
+               public void mouseClicked(java.awt.event.MouseEvent evt) {
+                    btmSegmentMouseClicked(evt);
+               }
+          });
+
+          btmPromo.setText("Promociones");
+          btmPromo.addMouseListener(new java.awt.event.MouseAdapter() {
+               public void mouseClicked(java.awt.event.MouseEvent evt) {
+                    btmPromoMouseClicked(evt);
+               }
+          });
+
+          btmProducto.setText("Productos");
+          btmProducto.addMouseListener(new java.awt.event.MouseAdapter() {
+               public void mouseClicked(java.awt.event.MouseEvent evt) {
+                    btmProductoMouseClicked(evt);
+               }
+          });
 
           javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
           getContentPane().setLayout(layout);
           layout.setHorizontalGroup(
                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(layout.createSequentialGroup()
-                    .addGap(292, 292, 292)
-                    .addComponent(jLabel1)
+                    .addGap(254, 254, 254)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                         .addComponent(mainWindowBackBtm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                         .addComponent(btmProducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                         .addComponent(btmPromo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                         .addComponent(btmSegment, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                         .addComponent(btmEmployed, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                         .addComponent(btmClients, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                              .addComponent(jLabel1)
+                              .addGap(18, 18, 18)))
                     .addContainerGap(248, Short.MAX_VALUE))
-               .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(mainWindowBackBtm)
-                    .addGap(230, 230, 230))
           );
           layout.setVerticalGroup(
                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(layout.createSequentialGroup()
-                    .addGap(53, 53, 53)
+                    .addGap(54, 54, 54)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)
+                    .addComponent(btmClients)
+                    .addGap(18, 18, 18)
+                    .addComponent(btmEmployed)
+                    .addGap(18, 18, 18)
+                    .addComponent(btmSegment)
+                    .addGap(18, 18, 18)
+                    .addComponent(btmPromo)
+                    .addGap(18, 18, 18)
+                    .addComponent(btmProducto)
+                    .addGap(18, 18, 18)
                     .addComponent(mainWindowBackBtm)
-                    .addContainerGap(297, Short.MAX_VALUE))
+                    .addContainerGap(95, Short.MAX_VALUE))
           );
 
           pack();
@@ -70,6 +126,41 @@ public class moreOptionsWindow extends javax.swing.JFrame {
           MainWindow open = new MainWindow();
           open.setVisible(true);
      }//GEN-LAST:event_mainWindowBackBtmMouseClicked
+
+     private void btmClientsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btmClientsMouseClicked
+          // TODO add your handling code here:
+          this.setVisible(false);
+          ViewClientsWindow open = new ViewClientsWindow();
+          open.setVisible(true);
+     }//GEN-LAST:event_btmClientsMouseClicked
+
+     private void btmEmployedMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btmEmployedMouseClicked
+          // TODO add your handling code here:
+          this.setVisible(false);
+          ViewEmployedWindow open = new ViewEmployedWindow();
+          open.setVisible(true);
+     }//GEN-LAST:event_btmEmployedMouseClicked
+
+     private void btmSegmentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btmSegmentMouseClicked
+          // TODO add your handling code here:
+          this.setVisible(false);
+          ViewSegmentWindow open = new ViewSegmentWindow();
+          open.setVisible(true);
+     }//GEN-LAST:event_btmSegmentMouseClicked
+
+     private void btmPromoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btmPromoMouseClicked
+          // TODO add your handling code here:
+          this.setVisible(false);
+          ViewPromoWindow open = new ViewPromoWindow();
+          open.setVisible(true);
+     }//GEN-LAST:event_btmPromoMouseClicked
+
+     private void btmProductoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btmProductoMouseClicked
+          // TODO add your handling code here:
+          this.setVisible(false);
+          ViewProductWindow open = new ViewProductWindow();
+          open.setVisible(true);
+     }//GEN-LAST:event_btmProductoMouseClicked
 
      /**
       * @param args the command line arguments
@@ -107,6 +198,11 @@ public class moreOptionsWindow extends javax.swing.JFrame {
      }
 
      // Variables declaration - do not modify//GEN-BEGIN:variables
+     private javax.swing.JButton btmClients;
+     private javax.swing.JButton btmEmployed;
+     private javax.swing.JButton btmProducto;
+     private javax.swing.JButton btmPromo;
+     private javax.swing.JButton btmSegment;
      private javax.swing.JLabel jLabel1;
      private javax.swing.JButton mainWindowBackBtm;
      // End of variables declaration//GEN-END:variables
